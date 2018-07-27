@@ -1,0 +1,15 @@
+{
+  "name": "injectron",
+  "version": "0.0.1",
+  "description": "Inject CSS and JS into closed source electron applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chrome-remote-interface": "0.26.0",
+    "commander": "2.16.0",
+    "get-port": "3.2.0"
+  }
+}
