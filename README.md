@@ -8,18 +8,24 @@ This script will launch the target app then attempt injection into every discove
 
 ## Installation
 
-To install dependencies
+To install globally
+
+    npm install -g
+
+Or, if you would prefer not to install globally, first install dependencies
 
     npm install
 
+Then use `node index.js` in place of `injectron` in the instructions below.
+
 ## Usage
 
-    node index.js --css custom.css --js custom.js path/to/electron/app
-    
+    injectron --css custom.css --js custom.js path/to/electron/app
+
 Multiple css and js files may be specified, just repeat the arguments, e.g.
 
-    node index.js --css custom1.css --css custom2.css path/to/electron/app
-    
+    injectron --css custom1.css --css custom2.css path/to/electron/app
+
 ## Advanced: patching scripts
 
 You can also supply a specification of how to patch javascript files loaded by the app.
@@ -38,8 +44,8 @@ You can specify multiple patches. They will be tried sequentially for each scrip
 
 Usage:
 
-    node index.js --jsPatch patch.js path/to/electron/app
-    
+    injectron --jsPatch patch.js path/to/electron/app
+
 Patches can of course be combined with ordinary CSS and JS injection.
 
 
