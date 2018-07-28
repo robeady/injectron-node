@@ -8,23 +8,17 @@ This script will launch the target app (with arguments if provided) then attempt
 
 ## Installation
 
-To install globally
-
-    npm install -g
-
-Or, if you would prefer not to install globally, first install dependencies
+To install dependencies
 
     npm install
 
-Then use `node index.js` in place of `injectron` in the instructions below.
-
 ## Usage
 
-    injectron --css custom.css --js custom.js path/to/electron/app args...
+    node index.js --css custom.css --js custom.js path/to/electron/app args...
 
 Multiple css and js files may be specified, just repeat the arguments, e.g.
 
-    injectron --css custom1.css --css custom2.css path/to/electron/app args...
+    node index.js --css custom1.css --css custom2.css path/to/electron/app args...
 
 ## Advanced: patching scripts
 
@@ -44,7 +38,7 @@ You can specify multiple patches. They will be tried sequentially for each scrip
 
 Usage:
 
-    injectron --jsPatch patch.js path/to/electron/app args...
+    node index.js --jsPatch patch.js path/to/electron/app args...
 
 Patches can of course be combined with ordinary CSS and JS injection.
 

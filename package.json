@@ -11,8 +11,5 @@
     "chrome-remote-interface": "0.26.0",
     "commander": "2.16.0",
     "get-port": "3.2.0"
-  },
-  "bin": {
-    "injectron": "./index.js"
   }
 }
