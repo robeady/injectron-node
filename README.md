@@ -4,7 +4,7 @@ Injects CSS and JS files into closed source electron applications.
 
 Injected JS will be evaluated; for injected CSS, a script will be injected that adds the CSS to the main stylesheet.
 
-This script will launch the target app then attempt injection into every discovered window/webview over a period of several seconds.
+This script will launch the target app (with arguments if provided) then attempt injection into every discovered window/webview over a period of several seconds.
 
 ## Installation
 
@@ -20,11 +20,11 @@ Then use `node index.js` in place of `injectron` in the instructions below.
 
 ## Usage
 
-    injectron --css custom.css --js custom.js path/to/electron/app
+    injectron --css custom.css --js custom.js path/to/electron/app arg1 arg2
 
 Multiple css and js files may be specified, just repeat the arguments, e.g.
 
-    injectron --css custom1.css --css custom2.css path/to/electron/app
+    injectron --css custom1.css --css custom2.css path/to/electron/app arg1 arg2
 
 ## Advanced: patching scripts
 
@@ -44,7 +44,7 @@ You can specify multiple patches. They will be tried sequentially for each scrip
 
 Usage:
 
-    injectron --jsPatch patch.js path/to/electron/app
+    injectron --jsPatch patch.js path/to/electron/app arg1 arg2
 
 Patches can of course be combined with ordinary CSS and JS injection.
 
