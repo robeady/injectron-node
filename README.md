@@ -20,11 +20,11 @@ Then use `node index.js` in place of `injectron` in the instructions below.
 
 ## Usage
 
-    injectron --css custom.css --js custom.js path/to/electron/app arg1 arg2
+    injectron --css custom.css --js custom.js path/to/electron/app args...
 
 Multiple css and js files may be specified, just repeat the arguments, e.g.
 
-    injectron --css custom1.css --css custom2.css path/to/electron/app arg1 arg2
+    injectron --css custom1.css --css custom2.css path/to/electron/app args...
 
 ## Advanced: patching scripts
 
@@ -44,7 +44,7 @@ You can specify multiple patches. They will be tried sequentially for each scrip
 
 Usage:
 
-    injectron --jsPatch patch.js path/to/electron/app arg1 arg2
+    injectron --jsPatch patch.js path/to/electron/app args...
 
 Patches can of course be combined with ordinary CSS and JS injection.
 
