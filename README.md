@@ -6,6 +6,12 @@ Injected JS will be evaluated; for injected CSS, a script will be injected that 
 
 This script will launch the target app then attempt injection into every discovered window/webview over a period of several seconds.
 
+## Installation
+
+To install dependencies
+
+    npm install
+
 ## Usage
 
     node index.js --css custom.css --js custom.js path/to/electron/app
