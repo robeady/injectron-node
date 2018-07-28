@@ -28,7 +28,7 @@ Create a JS patch file with contents:
 
 The arguments `scriptUrl` and `scriptSource` are strings.
 
-You can specify 
+You can specify multiple patches. They will be tried sequentially for each script: the first patch that returns true from `shouldPatch` will be used to patch a particular script.
 
 Usage:
 
